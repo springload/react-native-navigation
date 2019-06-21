@@ -124,6 +124,6 @@ public class ImageLoader {
     }
 
     private static InputStream localFile(Context context, String uri) throws FileNotFoundException {
-        return context.getContentResolver().openInputStream(Uri.parse(uri));
+        return context.getContentResolver().openInputStream(Uri.parse("android.resource://package.name/drawable/"+uri));
     }
 }
